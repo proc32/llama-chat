@@ -13,7 +13,6 @@ export async function POST(req) {
   const params = await req.json();
   const ip = req.headers.get("x-real-ip") || req.headers.get("x-forwarded-for");
 
-
   params.replicateClient = new Replicate({
     auth: params.replicateApiToken,
     userAgent: "llama-chat",
@@ -52,8 +51,6 @@ async function runLlama({
   console.log("model", model);
   console.log("maxTokens", maxTokens);
 
-
-
   return await replicateClient.predictions.create({
     model: model,
     stream: true,
@@ -70,7 +67,14 @@ async function runLlama({
   });
 }
 
-async function runLlava({ replicateClient, prompt, maxTokens, temperature, topP, image }) {
+async function runLlava({
+  replicateClient,
+  prompt,
+  maxTokens,
+  temperature,
+  topP,
+  image,
+}) {
   console.log("running llava");
 
   return await replicateClient.predictions.create({
@@ -86,7 +90,14 @@ async function runLlava({ replicateClient, prompt, maxTokens, temperature, topP,
   });
 }
 
-async function runSalmonn({ replicateClient, prompt, maxTokens, temperature, topP, audio }) {
+async function runSalmonn({
+  replicateClient,
+  prompt,
+  maxTokens,
+  temperature,
+  topP,
+  audio,
+}) {
   console.log("running salmonn");
 
   return await replicate.predictions.create({
