@@ -15,6 +15,7 @@ input {
     @apply py-2;
 }
 
+
 .prompt-button {
     @apply cursor-pointer underline;
 }
