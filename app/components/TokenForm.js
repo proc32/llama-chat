@@ -6,7 +6,7 @@ export default function TokenForm({ handleTokenSubmit }) {
       <div className="hero mx-auto">
         <div className="hero-text text-center max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold mb-4">
-            🦙 Ready to chat with a Llama? Made by M. Omer
+            🦙 Ready to chat? A Project by Omer
           </h1>
         </div>
 
