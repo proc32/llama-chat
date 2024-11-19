@@ -107,8 +107,8 @@ export default function HomePage() {
 
   const handleTokenSubmit = (e) => {
     e.preventDefault();
-    const token = e.target[0].value
-    console.log({token});
+    const token = e.target[0].value;
+    console.log({ token });
     localStorage.setItem("replicate_api_token", token);
     setReplicateApiToken(token);
     setTokenFormVisible(false);
@@ -198,7 +198,10 @@ export default function HomePage() {
     setOpen(false);
     setSystemPrompt(event.target.systemPrompt.value);
     setReplicateApiToken(event.target.replicateApiToken.value);
-    localStorage.setItem("replicate_api_token", event.target.replicateApiToken.value);
+    localStorage.setItem(
+      "replicate_api_token",
+      event.target.replicateApiToken.value
+    );
   };
 
   const handleSubmit = async (userMessage) => {
@@ -283,13 +286,13 @@ export default function HomePage() {
         <div className="justify-end">
           <a
             className="inline-flex items-center px-3 py-2 mr-3 text-sm font-semibold text-gray-700 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-            href="https://github.com/replicate/chat"
+            href="https://instagram.com/_mromer_/"
           >
             <CodeBracketIcon
               className="w-5 h-5 text-gray-500 sm:mr-2 group-hover:text-gray-900"
               aria-hidden="true"
             />{" "}
-            <span className="hidden sm:inline">Clone on GitHub</span>
+            <span className="hidden sm:inline">Follow on Instagram</span>
           </a>
           <button
             type="button"

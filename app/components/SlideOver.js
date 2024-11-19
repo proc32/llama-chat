@@ -68,7 +68,7 @@ export default function SlideOver({
                         </div>
                         <div className="mt-1">
                           <p className="text-sm text-gray-300">
-                            A project from Replicate.
+                            A project from Omer.
                           </p>
                         </div>
                       </div>
@@ -111,14 +111,14 @@ export default function SlideOver({
                                     >
                                       <Listbox.Options className="absolute mt-1 max-h-60 w-full shadow-md overflow-auto border-gray-700 rounded-md bg-white py-1 text-base ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                                         {models
-                                          ? models.map(
-                                            (model, modelIdx) => (
+                                          ? models.map((model, modelIdx) => (
                                               <Listbox.Option
                                                 key={modelIdx}
                                                 className={({ active }) =>
-                                                  `relative cursor-default select-none py-2 pl-10 pr-4 ${active
-                                                    ? "bg-gray-100 text-gray-900"
-                                                    : "text-gray-900"
+                                                  `relative cursor-default select-none py-2 pl-10 pr-4 ${
+                                                    active
+                                                      ? "bg-gray-100 text-gray-900"
+                                                      : "text-gray-900"
                                                   }`
                                                 }
                                                 value={model}
@@ -126,10 +126,11 @@ export default function SlideOver({
                                                 {({ selected }) => (
                                                   <>
                                                     <span
-                                                      className={`block truncate ${selected
-                                                        ? "font-medium"
-                                                        : "font-normal"
-                                                        }`}
+                                                      className={`block truncate ${
+                                                        selected
+                                                          ? "font-medium"
+                                                          : "font-normal"
+                                                      }`}
                                                     >
                                                       {model.name}
                                                     </span>
@@ -144,8 +145,7 @@ export default function SlideOver({
                                                   </>
                                                 )}
                                               </Listbox.Option>
-                                            )
-                                          )
+                                            ))
                                           : null}
                                       </Listbox.Options>
                                     </Transition>
@@ -196,7 +196,8 @@ export default function SlideOver({
                                 id="system-prompt-description"
                                 className="mt-2 text-xs text-gray-500"
                               >
-                                Your personal key for making API requests. Keep this secret!
+                                Your personal key for making API requests. Keep
+                                this secret!
                               </p>
                               <div className="mt-3">
                                 <input

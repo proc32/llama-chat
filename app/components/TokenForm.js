@@ -6,13 +6,13 @@ export default function TokenForm({ handleTokenSubmit }) {
       <div className="hero mx-auto">
         <div className="hero-text text-center max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold mb-4">
-            🦙 Ready to chat with a Llama? By Omer
+            🦙 Ready to chat with a Llama? Made by M. Omer
           </h1>
         </div>
 
         <div className="mt-12 max-w-xl mx-auto text-center">
           <p className="text-base text-gray-500">
-            You need a {" "}
+            You need a{" "}
             <Link
               className="underline"
               href="https://replicate.com/account/api-tokens?utm_campaign=llama2ai&utm_source=project"
@@ -20,7 +20,8 @@ export default function TokenForm({ handleTokenSubmit }) {
               rel="noopener noreferrer"
             >
               Replicate API token
-            </Link>{" "} to run this demo. Copy it and paste below:
+            </Link>{" "}
+            to run this demo. Copy it and paste below:
           </p>
 
           <form onSubmit={handleTokenSubmit}>
