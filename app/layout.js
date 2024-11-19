@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
-import "../styles/globals.css";
+import "../src/styles/globals.css";
 
 export const metadata = {
   title: "Chat with Meta Llama 3.1 on Replicate",
